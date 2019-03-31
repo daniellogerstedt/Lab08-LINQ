@@ -6,5 +6,7 @@ namespace LINQApp.Classes
 {
     class Geometry
     {
+        public string Type { get; set; }
+        public decimal[] Coordinates { get; set; }
     }
 }
