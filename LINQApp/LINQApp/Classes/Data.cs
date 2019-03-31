@@ -4,9 +4,9 @@ using System.Text;
 
 namespace LINQApp.Classes
 {
-    class Data
+    public class Data
     {
-        string Type { get; set; }
-        Features[] Features { get; set; }
+        public string Type { get; set; }
+        public Features[] Features { get; set; }
     }
 }

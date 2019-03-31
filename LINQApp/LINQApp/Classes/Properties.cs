@@ -4,14 +4,14 @@ using System.Text;
 
 namespace LINQApp.Classes
 {
-    class Properties
+    public class Properties
     {
-        string PostalCode { get; set; }
-        string City { get; set; }
-        string State { get; set; }
-        string Address { get; set; }
-        string Borough { get; set; }
-        string Neighborhood { get; set; }
-        string County { get; set; }
+        public string PostalCode { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Address { get; set; }
+        public string Borough { get; set; }
+        public string Neighborhood { get; set; }
+        public string County { get; set; }
     }
 }

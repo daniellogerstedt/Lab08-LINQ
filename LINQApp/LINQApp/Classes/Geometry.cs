@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LINQApp.Classes
 {
-    class Geometry
+    public class Geometry
     {
         public string Type { get; set; }
         public decimal[] Coordinates { get; set; }

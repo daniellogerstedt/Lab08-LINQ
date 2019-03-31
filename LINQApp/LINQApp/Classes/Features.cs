@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LINQApp.Classes
 {
-    class Features
+    public class Features
     {
         public string Type { get; set; }
         public Geometry Geometry { get; set; }
