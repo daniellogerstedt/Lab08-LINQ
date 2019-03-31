@@ -1,4 +1,7 @@
 ﻿using System;
+using Newtonsoft.Json;
+using LINQApp.Classes;
+using System.Linq;
 
 namespace LINQApp
 {
@@ -6,7 +9,21 @@ namespace LINQApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+        }
+
+
+        static void Questions ()
+        {
+            string fileData = System.IO.File.ReadAllText("../data.json");
+            Data data = JsonConvert.DeserializeObject<Data>(fileData);
+
+            var query = from places in data.Features select places.Properties.Neighborhood;
+
+            foreach (var item in query)
+            {
+
+            }
         }
     }
 }
